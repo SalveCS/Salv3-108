@@ -23,6 +23,7 @@ import sustainabilityImage3 from './assets/images/s_290525.png'
 import carbonoLogo from './assets/images/carbono_neutro_logo_f.png'
 import florestaSustentavel from './assets/images/floresta_sustentavel.jpg'
 import teamImage from './assets/images/team-communication.jpg'
+import birdImage from './assets/images/bird_image.jpg' // Nova imagem do pássaro
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
