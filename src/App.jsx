@@ -24,6 +24,8 @@ import carbonoLogo from './assets/images/carbono_neutro_logo_f.png'
 import florestaSustentavel from './assets/images/floresta_sustentavel.jpg'
 import teamImage from './assets/images/team-communication.jpg'
 import birdImage from './assets/images/bird_image.jpg' // Nova imagem do pássaro
+import foto1 from './assets/images/Foto1.jpg' // Nova imagem para substituir as 3 imagens
+import foto2 from './assets/images/Foto2.jpg' // Nova imagem para a seção de compromisso
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -175,7 +177,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section id="inicio" className="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+      <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
         {/* Background Image with Parallax Effect */}
         <div 
           ref={parallaxRef}
@@ -416,21 +418,11 @@ function App() {
               </motion.div>
             </motion.div>
             <ScrollReveal direction="right" delay={0.4}>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="flex justify-center">
                 <LazyImage
-                  src={birdImage} // Usando a nova imagem do pássaro
-                  alt="Sustentabilidade 1"
-                  className="rounded-2xl shadow-lg hover-lift image-hover object-cover object-center h-full w-full" // Adicionado object-cover e object-center
-                />
-                <LazyImage
-                  src={sustainabilityImage2}
-                  alt="Sustentabilidade 2"
-                  className="rounded-2xl shadow-lg hover-lift image-hover mt-8"
-                />
-                <LazyImage
-                  src={sustainabilityImage3}
-                  alt="Sustentabilidade 3"
-                  className="rounded-2xl shadow-lg hover-lift image-hover col-span-2"
+                  src={foto1}
+                  alt="Sustentabilidade - Cuidado com a natureza"
+                  className="rounded-2xl shadow-lg hover-lift image-hover object-cover object-center w-full max-w-md h-96"
                 />
               </div>
             </ScrollReveal>
@@ -444,9 +436,9 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <ScrollReveal direction="left" delay={0.4}>
               <LazyImage
-                src={florestaSustentavel}
-                alt="Floresta Sustentável"
-                className="rounded-2xl shadow-2xl hover-lift image-hover h-80 object-cover object-center" // Adicionado object-cover e object-center
+                src={foto2}
+                alt="Compromisso com o planeta"
+                className="rounded-2xl shadow-2xl hover-lift image-hover h-80 object-cover object-center"
               />
             </ScrollReveal>
             <motion.div
@@ -511,8 +503,8 @@ function App() {
                   <CardTitle className="text-xl font-bold">Email</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">contato@salve.com</p>
-                  <a href="mailto:contato@salve.com" className="text-primary hover:underline mt-2 block">Enviar Email</a>
+                  <p className="text-muted-foreground">salvempresa@gmail.com</p>
+                  <a href="mailto:salvempresa@gmail.com" className="text-primary hover:underline mt-2 block">Enviar Email</a>
                 </CardContent>
               </Card>
             </ScrollReveal>
@@ -523,8 +515,8 @@ function App() {
                   <CardTitle className="text-xl font-bold">Telefone</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">+55 (11) 99999-9999</p>
-                  <a href="tel:+5511999999999" className="text-primary hover:underline mt-2 block">Ligar Agora</a>
+                  <p className="text-muted-foreground">+55 (11) 97975-7763</p>
+                  <a href="https://wa.me/5511979757763?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20SALVE." target="_blank" rel="noopener noreferrer" className="text-primary hover:underline mt-2 block">Ligar Agora</a>
                 </CardContent>
               </Card>
             </ScrollReveal>
@@ -535,8 +527,8 @@ function App() {
                   <CardTitle className="text-xl font-bold">Instagram</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">@salvecomunicacao</p>
-                  <a href="https://instagram.com/salvecomunicacao" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline mt-2 block">Visitar Perfil</a>
+                  <p className="text-muted-foreground">salve_cs</p>
+                  <a href="https://instagram.com/salve_cs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline mt-2 block">Visitar Perfil</a>
                 </CardContent>
               </Card>
             </ScrollReveal>
