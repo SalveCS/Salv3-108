@@ -188,11 +188,11 @@ function App() {
           }}
         ></div>
         
-        {/* Dark Overlay for Better Contrast */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        {/* Dark Overlay for Better Contrast - Fixed to viewport height */}
+        <div className="fixed top-0 left-0 w-full h-screen bg-black/60 pointer-events-none" style={{ zIndex: 1 }}></div>
         
-        {/* Animated Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-transparent to-primary/20"></div>
+        {/* Animated Gradient Overlay - Fixed to viewport height */}
+        <div className="fixed top-0 left-0 w-full h-screen bg-gradient-to-br from-black/40 via-transparent to-primary/20 pointer-events-none" style={{ zIndex: 1 }}></div>
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <motion.h1
@@ -438,7 +438,7 @@ function App() {
               <LazyImage
                 src={foto2}
                 alt="Compromisso com o planeta"
-                className="rounded-2xl shadow-2xl hover-lift image-hover h-80 object-cover object-center"
+                className="rounded-2xl shadow-2xl hover-lift image-hover h-80 object-cover object-top"
               />
             </ScrollReveal>
             <motion.div
