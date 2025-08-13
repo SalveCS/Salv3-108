@@ -24,8 +24,8 @@ import carbonoLogo from './assets/images/carbono_neutro_logo_f.png'
 import florestaSustentavel from './assets/images/floresta_sustentavel.jpg'
 import teamImage from './assets/images/team-communication.jpg'
 import birdImage from './assets/images/bird_image.jpg' // Nova imagem do pássaro
-import foto1 from './assets/images/Foto1.jpg' // Nova imagem para substituir as 3 imagens
-import foto2 from './assets/images/Foto2.jpg' // Nova imagem para a seção de compromisso
+import foto1 from './assets/images/Foto1.png' // Nova imagem para substituir as 3 imagens
+import foto2 from './assets/images/Foto2.jpeg' // Nova imagem para a seção de compromisso
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -422,7 +422,7 @@ function App() {
                 <LazyImage
                   src={foto1}
                   alt="Sustentabilidade - Cuidado com a natureza"
-                  className="rounded-2xl shadow-lg hover-lift image-hover object-cover object-center w-full max-w-md h-96"
+                  className="rounded-2xl shadow-lg hover-lift image-hover object-cover object-center w-full max-w-md h-96 mx-auto block"
                 />
               </div>
             </ScrollReveal>
@@ -438,7 +438,7 @@ function App() {
               <LazyImage
                 src={foto2}
                 alt="Compromisso com o planeta"
-                className="rounded-2xl shadow-2xl hover-lift image-hover h-80 object-cover object-top"
+                className="rounded-2xl shadow-2xl hover-lift image-hover h-80 object-cover object-top mx-auto block"
               />
             </ScrollReveal>
             <motion.div
