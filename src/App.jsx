@@ -189,7 +189,7 @@ function App() {
         ></div>
         
         {/* Dark Overlay for Better Contrast - Fixed to viewport height */}
-        <div className="fixed top-0 left-0 w-full h-screen bg-black/60 pointer-events-none" style={{ zIndex: 1 }}></div>
+        {/* <div className="fixed top-0 left-0 w-full h-screen bg-black/60 pointer-events-none" style={{ zIndex: 1 }}></div> */}
         
         {/* Animated Gradient Overlay - Fixed to viewport height */}
         <div className="fixed top-0 left-0 w-full h-screen bg-gradient-to-br from-black/40 via-transparent to-primary/20 pointer-events-none" style={{ zIndex: 1 }}></div>
